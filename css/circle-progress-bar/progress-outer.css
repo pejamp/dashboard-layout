@@ -1,0 +1,35 @@
+.progress__outer {
+  width: 197px;
+  height: 197px;
+  position: relative;
+}
+
+.progress__outer svg {
+  --percentage: 0;
+  transform: rotate(-90deg);
+}
+
+.progress__outer svg circle {
+  stroke-dasharray: 618;
+  stroke-dashoffset: 618;
+  stroke-width: 35;
+  fill: none;
+}
+
+.progress__outer svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+}
+
+.progress__outer svg circle:nth-child(2) {
+  stroke-dashoffset: calc(618 - (618 * var(--percentage))/100);
+  stroke-linecap: round;
+
+  animation: progress 1s ease-in-out;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 618;
+    stroke-dashoffset: 618;
+  }
+}

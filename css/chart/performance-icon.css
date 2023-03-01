@@ -1,0 +1,7 @@
+.performance__icon {
+  font-size: 54px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-image: var(--icon-gradient-green);
+}

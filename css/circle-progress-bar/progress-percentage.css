@@ -1,0 +1,5 @@
+.progress__percentage {
+  font-weight: 700;
+  font-size: 34px;
+  color: var(--text-white);
+}

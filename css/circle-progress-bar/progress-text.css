@@ -1,0 +1,9 @@
+.progress__text {
+  text-align: center;
+  line-height: 26px;
+  color: var(--text-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

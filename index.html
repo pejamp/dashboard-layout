@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/container.css">
+  <link rel="stylesheet" href="css/chart/chart.css">
+  <link rel="stylesheet" href="css/chart/chart-title.css">
+  <link rel="stylesheet" href="css/chart/chart-score.css">
+  <link rel="stylesheet" href="css/chart/performance.css">
+  <link rel="stylesheet" href="css/chart/performance-title.css">
+  <link rel="stylesheet" href="css/chart/performance-icon.css">
+  <link rel="stylesheet" href="css/balance-container.css">
+  <link rel="stylesheet" href="css/circle-progress-bar/progress-outer.css">
+  <link rel="stylesheet" href="css/circle-progress-bar/progress-text.css">
+  <link rel="stylesheet" href="css/circle-progress-bar/progress-percentage.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <main class="container">
+    <article class="chart">
+      <h1 class="chart__title">NPS geral</h1>
+      <div class="performance">
+        <span class="performance__icon">
+          <i class="fa-solid fa-face-laugh-beam"></i>
+        </span>
+        <span class="performance__title">Excelente!</span>
+      </div>
+      <span class="chart__score">NPS Score 75</span>
+    </article>
+    <article class="chart">
+      <h1 class="chart__title">Vendas fechadas</h1>
+      <div class="progress__outer">
+        <svg viewBox="0 0 232 232" style="--percentage: 70">
+          <circle
+            cx="50%" cy="50%" 
+            r="98.5"
+            opacity="0.1"
+            stroke="#D9D9D9"
+          />
+          <circle
+            cx="50%" cy="50%" 
+            r="98.5"
+            stroke=url(#paint0_linear_201_85)
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_201_85"
+              xl="-9" yl="82"
+              x2="145" y2="178"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#CE9FFC" />
+              <stop offset="1" stop-color="#7367F0" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="progress__text">
+          <h3 class="progress__percentage">70%</h3>
+          <span>alcançada</span>
+        </div>
+      </div>
+      <div class="balance-container">
+        <span class="chart__score score__highlight">
+          Esperado
+          <span class="score">100</span>
+        </span>
+        <span class="chart__score score__highlight score__highlight--purple">
+          Alcançado
+          <span class="score">70</span>
+        </span>
+      </div>
+    </article>
+    <article class="chart">
+      <h1 class="chart__title">Meta mensal</h1>
+      <div class="progress__outer">
+        <svg viewBox="0 0 232 232" style="--percentage: 90">
+          <circle
+            cx="50%" cy="50%" 
+            r="98.5"
+            opacity="0.1"
+            stroke="#D9D9D9"
+          />
+          <circle
+            cx="50%" cy="50%" 
+            r="98.5"
+            stroke=url(#paint0_linear_201_104)
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_201_104"
+              xl="0.5" yl="82"
+              x2="154.842" y2="178.702"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#DF9780" />
+              <stop offset="1" stop-color="#A66DE9" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="progress__text">
+          <h3 class="progress__percentage">90%</h3>
+          <span>alcançada</span>
+        </div>
+      </div>
+      <div class="balance-container">
+        <span class="chart__score score__highlight">
+          Esperado
+          <span class="score">R$ 70K</span>
+        </span>
+        <span class="chart__score score__highlight score__highlight--orange">
+          Alcançado
+          <span class="score">R$ 63K</span>
+        </span>
+      </div>
+    </article>
+    <article class="chart weekly-sell">
+      <h1 class="chart__title">Vendas por dia da semana</h1>
+      <div class="weekly-sell__container">
+        <div class="weekly-sell__trending">
+          <div class="trending trending__most-sell">
+            <span>Dia com mais vendas</span>
+            quarta-feira
+          </div>
+          <div class="trending trending__less-sell">
+            <span>Dia com menos vendas</span>
+            domingo
+          </div>
+        </div>
+        <div class="weekly-sell__diagram">
+          diagrama
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

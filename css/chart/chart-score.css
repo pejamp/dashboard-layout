@@ -1,0 +1,34 @@
+.chart__score {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--text-white);
+}
+
+.score__highlight {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.score__highlight::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--icon-gray);
+  margin-right: 4px;
+}
+
+.score {
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.score__highlight--purple::before {
+  background: var(--icon-gradient-purple);
+}
+
+.score__highlight--orange::before {
+  background: var(--icon-gradient-orange);
+}
