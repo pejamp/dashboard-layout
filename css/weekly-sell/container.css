@@ -1,0 +1,5 @@
+.weekly-sell__container {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+}

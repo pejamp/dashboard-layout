@@ -1,0 +1,15 @@
+.bar {
+  width: 15px;
+  background: var(--bar-green);
+  border-radius: 999px;
+
+  height: var(--bar-height);
+
+  animation: up 1.4s;
+}
+
+@keyframes up {
+  0% {
+    height: 0;
+  }
+}

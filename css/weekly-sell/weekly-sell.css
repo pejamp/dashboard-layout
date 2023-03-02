@@ -1,0 +1,4 @@
+.weekly-sell {
+  grid-column: 1/span 3;
+  align-items: flex-start;
+}

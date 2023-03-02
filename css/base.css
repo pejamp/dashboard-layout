@@ -13,7 +13,7 @@
   --progress-background: #D9D9D9;
   --progress-purple: linear-gradient(135deg, #CE9FFC, #7367F0);
   --progress-orange: linear-gradient(135deg, #DF9780, #A66DE9);
-  --progress-green: linear-gradient(to bottom, #90F7EC, #32CCBC);
+  --bar-green: linear-gradient(to bottom, #90F7EC, #32CCBC);
   --divider: #4A4556;
 }
 

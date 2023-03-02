@@ -1,0 +1,15 @@
+.bar-wrapper {
+  display: grid;
+  grid-template-rows: 159px auto;
+  justify-items: center;
+  align-items: end;
+  gap: 5px;
+  z-index: 1;
+}
+
+.bar-wrapper span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-white);
+  line-height: 22px;
+}
